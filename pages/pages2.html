@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo favicon -->
+    <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Galeria de motos automaticas</title>
+    <!-- link estilos de boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- link de estilos -->
+    <link rel="stylesheet" href="../styles/style2.css">
+</head>
+
+<body>
+    <header class="barra">
+        <section class="bk-logo">
+            <a  href="#">
+                <img class="logo" src="../assets/logo.png" alt="MotoVersus Icon">
+            </a>
+        </section>
+        <nav class="navbar navbar-expand-lg">
+            <section class="container-fluid">
+                <div class="mx-auto searchBar">
+                    <form class="d-flex" role="search" onsubmit="return false;">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." id="searchInput">
+                    </form>
+                </div>
+
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light me-2">Inicio</a>
+                    <a href="#" class="btn btn-outline-light">About</a>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+
+        <!-- Carrusel -->
+
+        <figure id="motoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#agility"><img src="../assets/Auteco_Agility_Fusion/NegroCafe.png"
+                            class="d-block margen-img" alt="Moto Agility Fusion Trakku"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#bet"><img src="../assets/Auteco_BET_ABS/GrisNardo.png" class="d-block margen-img"
+                            alt="Moto BET ABS"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#dazz"><img src="../assets/Auteco_DAZZ_110/azulArlequin.png" class="d-block margen1-img"
+                            alt="Moto DAZZ 110"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#ntorq"><img src="../assets/Auteco_NTORW/NegroMateDorado.png" class="d-block margen1-img"
+                            alt="Moto NTORQ 125 XCONNECT"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#dio"><img src="../assets/Honda_DIO/nueva-dio-std-azul.png" class="d-block margen2-img"
+                            alt="Moto DIO LED"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#piaggio"><img src="../assets/Piaggio_1_Active/AzulBlanco-removebg-preview.png"
+                            class="d-block margen3-img" alt="Moto PIAGGIO 1"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#address"><img src="../assets/Suzuki_address_nz/ADDRESS NZ Negra.png"
+                            class="d-block margen4-img" alt="Moto ADDRESS NZ"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#crox"><img src="../assets/SYM_Crox_125_Euro/blancoRojo.png"
+                            class="d-block margen5-img margen-img" alt="Moto Crox 125 Euro"></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#motoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#motoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </figure>
+
+        <section class="mt-5">
+            <h1 class="text-center mb-4">Motos Automáticas</h1>
+
+            <!-- 1. AGILITY FUSION TRAKKU -->
+
+            <div id="agility" class="row align-items-center mb-5 filterable-item">
+                <div class="col-md-6 ">
+                    <img src="../assets/Auteco_Agility_Fusion/NegroCafe.png" class="img-fluid rounded agility-img "
+                        alt="Moto Agility Fusion Trakku">
+                </div>
+                <article class="col-md-6 mt-3 mt-md-0">
+                    <h3>AGILITY FUSION TRAKKU</h3>
+                    <p><strong>Cilindraje:</strong> 124.6 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, monocilíndrico</p>
+                    <p><strong>Potencia:</strong> 9.3 HP @ 7000 rpm</p>
+                    <p><strong>Transmisión:</strong> Automática CVT</p>
+                    <p><strong>Peso:</strong> 107 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $9.499.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 2. BET ABS	 -->
+
+            <div id="bet" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselbet" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/Auteco_BET_ABS/GrisNardo.png" class="d-block moto-img moto1-img"
+                                alt="Moto BET ABS Gris Nardo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Auteco_BET_ABS/NegroMate.png" class="d-block moto-img moto1-img"
+                                alt="Moto BET ABS Negro Mate">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselbet"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselbet"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>BET ABS</h3>
+                    <p><strong>Cilindraje:</strong> 149.2 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, monocilíndrico</p>
+                    <p><strong>Potencia:</strong> 14.8 HP @ 8000 rpm</p>
+                    <p><strong>Transmisión:</strong> Automática</p>
+                    <p><strong>Frenos:</strong> ABS en ambas ruedas</p>
+                    <p><strong>Peso:</strong> 144 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $12.999.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 3. DAZZ 110	 -->
+
+            <div id="dazz" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouseldazz" class="carousel slide moto-carrusel col-md-6 order-md-1 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/Auteco_DAZZ_110/azulArlequin.png" class="d-block moto1-img"
+                                alt="Moto DAZZ 110 Azul Arlequin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Auteco_DAZZ_110/grisCarbono.png" class="d-block moto1-img"
+                                alt="Moto DAZZ 110 Gris Carbono">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Auteco_DAZZ_110/negroNebulosa.png" class="d-block moto1-img"
+                                alt="Moto DAZZ 110 Negro Nebulosa">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouseldazz"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouseldazz"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <article class="col-md-6 order-md-2 mt-3 mt-md-0">
+                    <h3>DAZZ 110</h3>
+                    <p><strong>Cilindraje:</strong> 109.7 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, monocilíndrico</p>
+                    <p><strong>Potencia:</strong> 7.9 HP @ 7500 rpm</p>
+                    <p><strong>Transmisión:</strong> Automática</p>
+                    <p><strong>Peso:</strong> 96 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $6.999.999 COP</p>
+                </article>
+            </div>
+
+            <!-- 4. NTORQ 125 XCONNECT -->
+
+            <div id="ntorq" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselntorq" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/Auteco_NTORW/azulPetroleoDorado.png" class="d-block moto2-img"
+                                alt="Moto NTORQ 125 XCONNECT Azul Petroleo Dorado">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Auteco_NTORW/NegroMateDorado.png" class="d-block moto2-img"
+                                alt="Moto NTORQ 125 XCONNECT Negro Mate Dorado">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Auteco_NTORW/negroMateGris.png" class="d-block moto2-img"
+                                alt="Moto NTORQ 125 XCONNECT Negro Mate Gris">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselntorq"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselntorq"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>NTORQ 125 XCONNECT</h3>
+                    <p><strong>Cilindraje:</strong> 124.79 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, monocilíndrico</p>
+                    <p><strong>Potencia:</strong> 9.25 HP @ 7500 rpm</p>
+                    <p><strong>Transmisión:</strong> Automática</p>
+                    <p><strong>Frenos:</strong> Disco delantero</p>
+                    <p><strong>Peso:</strong> 116.1 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $8.599.999 COP</p>
+                </article>
+            </div>
+
+            <!-- 5. DIO LED STD 2026 -->
+
+            <div id="dio" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouseldio" class="carousel slide moto-carrusel col-md-6 order-md-1 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor1">
+                        <div class="carousel-item active">
+                            <img src="../assets/Honda_DIO/nueva-dio-std-azul.png" class="d-block moto-img"
+                                alt="Moto DIO LED Azul">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Honda_DIO/nueva-dio-std-rojo.png" class="d-block moto-img"
+                                alt="Moto DIO LED Rojo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouseldio"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouseldio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <article class="col-md-6 order-md-2 mt-3 mt-md-0">
+                    <h3>DIO LED STD 2026</h3>
+                    <p><strong>Cilindraje:</strong> 109.2 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, OHC, refrigerado por aire</p>
+                    <p><strong>Potencia:</strong> 7.65 HP @ 7000 rpm</p>
+                    <p><strong>Transmisión:</strong> Automática V-Matic</p>
+                    <p><strong>Frenos:</strong> Tambor con CBS</p>
+                    <p><strong>Peso:</strong> 104 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $7.500.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 6. PIAGGIO 1 ACTIVE -->
+
+            <div id="piaggio" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselpiaggio" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor1">
+                        <div class="carousel-item active">
+                            <img src="../assets/Piaggio_1_Active/AmarilloNegro-removebg-preview.png"
+                                class="d-block moto2-img moto-responsive" alt="Moto PIAGGIO 1 Amarillo Negro">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Piaggio_1_Active/AzulBlanco-removebg-preview.png"
+                                class="d-block moto2-img moto-responsive" alt="Moto PIAGGIO 1 Azul Blanco">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Piaggio_1_Active/Blanco.png" class="d-block moto-img "
+                                alt="Moto PIAGGIO 1 blanco">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselpiaggio"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselpiaggio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>PIAGGIO 1 ACTIVE</h3>
+                    <p><strong>Motor:</strong> Eléctrico</p>
+                    <p><strong>Velocidad Máxima:</strong> 60 km/h</p>
+                    <p><strong>Autonomía:</strong> 85 km (modo ECO)</p>
+                    <p><strong>Transmisión:</strong> Automática</p>
+                    <p><strong>Frenos:</strong> Disco delantero y trasero</p>
+                    <p><strong>Peso:</strong> 79 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $8.990.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 7. ADDRESS NZ -->
+
+            <div id="address" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouseladdress" class="carousel slide moto-carrusel col-md-6 order-md-1 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor1">
+                        <div class="carousel-item active">
+                            <img src="../assets/Suzuki_address_nz/ADDRESS NZ Azul.png" class="d-block moto3-img"
+                                alt="Moto ADDRESS NZ Azul">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Suzuki_address_nz/ADDRESS NZ Negra.png" class="d-block moto3-img"
+                                alt="Moto ADDRESS NZ Negro">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouseladdress"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouseladdress"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <article class="col-md-6 order-md-2 mt-3 mt-md-0">
+                    <h3>ADDRESS NZ</h3>
+                    <p><strong>Cilindraje:</strong> 113 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, 1 cilindro, refrigeración por aire</p>
+                    <p><strong>Potencia:</strong> 8 HP</p>
+                    <p><strong>Transmisión:</strong> Automática, Correa en V</p>
+                    <p><strong>Frenos:</strong> Disco delantero y tambor trasero</p>
+                    <p><strong>Peso:</strong> 95 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $8.400.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 8. Crox 125 Euro -->
+
+            <div id="crox" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselcrox" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/SYM_Crox_125_Euro/blancoAzul.png" class="d-block moto1-img"
+                                alt="Moto Crox 125 Euro Blanco Azul">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../assets/SYM_Crox_125_Euro/negroRojo.png" class="d-block moto1-img"
+                                alt="Moto Crox 125 Euro Negro Rojo">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../assets/SYM_Crox_125_Euro/blancoRojo.png" class="d-block moto1-img"
+                                alt="Moto Crox 125 Euro Blanco Rojo">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../assets/SYM_Crox_125_Euro/negroAzul.png" class="d-block moto1-img"
+                                alt="Moto Crox 125 Euro Negro Azul">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselcrox"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselcrox"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>Crox 125 Euro</h3>
+                    <p><strong>Cilindraje:</strong> 124.6 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, 2 válvulas</p>
+                    <p><strong>Potencia:</strong> 10.05 HP @ 8500 rpm</p>
+                    <p><strong>Transmisión:</strong> Automática CVT</p>
+                    <p><strong>Frenos:</strong> Disco lobulado delantero y tambor trasero</p>
+                    <p><strong>Peso:</strong> 117 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $7.699.000 COP</p>
+                </article>
+            </div>
+
+        </section>
+    </main>
+
+        <footer class="footer-def">
+      <section class="footer-complet">
+        <div class="footer-links">
+          <a href="#">Política de privacidad</a> |
+          <a href="#">Condiciones de uso</a> | <a href="#">Legal</a> |
+          <a href="#">Mapa del sitio</a>
+        </div>
+        <div class="footer-copy">
+          Copyright © 2025 Motoversus. Todos los derechos reservados
+        </div>
+      </section>
+    </footer>
+    
+    <!-- Script de boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- script personal -->
+    <script src="../script/script2.js"></script>
+</body>
+
+</html>
