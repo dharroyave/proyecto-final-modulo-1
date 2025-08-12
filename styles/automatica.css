@@ -407,6 +407,11 @@ h3 {
 
 /* Footer */
 
+footer{
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
 .footer-links a{
   color: var(--color-enfasis2);
   text-decoration: none;
