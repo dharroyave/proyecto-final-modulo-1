@@ -406,3 +406,31 @@ h3 {
 }
 
 /* Footer */
+
+.footer-links a{
+  color: var(--color-enfasis2);
+  text-decoration: none;
+  margin: 0 5px;
+  color: var(--color-enfasis2)
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-complet {
+  background-color: var(--color-enfasis1);
+}
+
+.footer-copy {
+  color: var(--color-enfasis2);
+  font-size: 12px;
+}
+
+.footer-def {
+  text-align: center;
+  padding: 20px 10px;
+  font-family: var(--texto-secundario);
+  
+  
+}
