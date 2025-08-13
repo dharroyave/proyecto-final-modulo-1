@@ -76,6 +76,30 @@ header {
 
 /* main */
 
+main {
+    margin: 8vh 4vw;
+    min-height: 70vh;
+}
+
+h1 {
+    font-family: var(--text-title);
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    text-shadow: 5px 5px 30px var(--color-3);
+    color: var(--color-2);
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+    line-height: 1.1;
+}
+
+h3 {
+    font-family: var(--text-title);
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsivo: 24px-40px */
+    color: var(--color-2);
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+}
+
+
 .carousel-item {
     display: flex;
     justify-content: center;
@@ -93,6 +117,22 @@ header {
     width: 50vw;
     height: 500px;
     object-fit: contain;
+}
+
+.fondo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    height: auto;
+    min-height: 500px;
+    padding: 2rem;
+    border-radius: 40px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+
+.fondo-img:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -132,6 +172,4 @@ footer{
   text-align: center;
   padding: 20px 10px;
   font-family: var(--texto-secundario);
-  
-  
 }
