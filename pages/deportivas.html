@@ -1,164 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <!-- iconos de bootstrap-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.min.css"
-      rel="stylesheet"
-    />
-    <!-- estilos propios --- más importantes -->
-    <link rel="stylesheet" href="../styles/deportivas.css" />
-
-    <title>DEPORTIVAS</title>
+    <!-- titulo favicon -->
+    <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Galeria de motos automaticas</title>
+    <!-- link estilos de boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- link de estilos -->
+    <link rel="stylesheet" href="../styles/deportivas.css">
 </head>
+
 <body>
-    <header>
-         <nav class="navbar navbar-expand-lg nav-bg">
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <a class="navbar-brand" href="#">
-            <img class="logo" src="../assets/logo.png" alt="logo" />
-          </a>
-          <button
-            data-mdb-collapse-init
-            class="navbar-toggler"
-            type="button"
-            data-mdb-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-            <form class="d-flex input-group w-auto barra">
-              <input
-                type="search"
-                class="form-control "
-                placeholder="Buscar"
-                aria-label="Search"
-              />
-            </form>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto lista">
-              <li class="nav-item">
-                <a class="nav-link texto-barra" aria-current="page" href="#"
-                  >Nosotros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link texto-barra" href="#">Marca</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link texto-barra" href="#">Estilo</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <header class="barra">
+        <section class="bk-logo">
+            <a href="#">
+                <img class="logo" src="../assets/logo.png" alt="MotoVersus Icon">
+            </a>
+        </section>
+        <nav class="navbar navbar-expand-lg">
+            <section class="container-fluid">
+                <div class="mx-auto searchBar">
+                    <form class="d-flex" role="search" onsubmit="return false;">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." id="searchInput">
+                    </form>
+                </div>
 
-      <img class="portada" src="./assets/portada.png" alt="portada">
-
+                <div class="d-flex">
+                    <a href="../index.html" class="btn btn-outline-light me-2">Inicio</a>
+                    <a href="#" class="btn btn-outline-light">About</a>
+                </div>
+            </section>
+        </nav>
     </header>
-    
-    <main>
 
-        <section id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../assets/Deportivas/1img.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item active">
-      <img src="../assets/Deportivas/2img.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item active">
-      <img src="../assets/Deportivas/3img.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item active">
-      <img src="../assets/Deportivas/4img.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../assets/Deportivas/5img.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../assets/Deportivas/6img.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <main class="container mt-4">
+
+        <!-- Carrusel -->
+
+        <figure id="motoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#agility"><img src="../assets/Deportivas/1img.jpg"
+                            class="d-block margen-img" alt="Moto Agility Fusion Trakku"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#bet"><img src="../assets/Deportivas/2img.jpg" class="d-block margen-img"
+                            alt="Moto BET ABS"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#dazz"><img src="../assets/Deportivas/3img.jpg" class="d-block margen1-img"
+                            alt="Moto DAZZ 110"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#ntorq"><img src="../assets/Deportivas/4img.jpg" class="d-block margen1-img"
+                            alt="Moto NTORQ 125 XCONNECT"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#dio"><img src="../assets/Deportivas/5img.png" class="d-block margen2-img"
+                            alt="Moto DIO LED"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#piaggio"><img src="../assets/Deportivas/6img.jpg"
+                            class="d-block margen3-img" alt="Moto PIAGGIO 1"></a>
+               
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#motoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#motoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </figure>
+
+        <section class="mt-5">
+            <h1 class="text-center mb-4">Motos Depotivas</h1>
+
+            <!-- 1. AGILITY FUSION TRAKKU -->
+
+            
+            <!-- 2. HONDA 500	 -->
+
+            <div id="bet" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselbet" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/HONDA1_500.png" class="d-block moto-img moto1-img motosinfo"
+                                alt="Moto BET ABS Gris Nardo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/HONDA2_500.png" class="d-block moto-img moto1-img motosinfo"
+                                alt="Moto BET ABS Negro Mate">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/HONDA3_500.png" class="d-block moto-img moto1-img motosinfo"
+                                alt="Moto BET ABS Negro Mate">
+                        </div>
+                         <div class="carousel-item">
+                            <img src="../assets/Deportivas/Honda_CBR500R.PNG" class="d-block moto-img moto1-img motosinfo"
+                                alt="Moto BET ABS Negro Mate">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselbet"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselbet"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>HONDA CBR500R</h3>
+                    <p><strong>Cilindraje:</strong> 471 cc</p>
+                    <p><strong>Motor:</strong> bicilíndrico, DOHC, refrigeración líquida</p>
+                    <p><strong>Potencia:</strong> 35 kW (~47 CV) @ 8.600 rpm</p>
+                    <p><strong>Transmisión:</strong> Horquilla Showa 41 mm / Pro-Link ajustable de 5 posiciones</p>
+                    <p><strong>Peso:</strong> 192 kg en orden de marcha</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $24.999.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 3. KAWASAKI NINJA 650	 -->
+
+            <div id="dazz" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouseldazz" class="carousel slide moto-carrusel col-md-6 order-md-1 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/Kawasaki_Ninja_650.png" class="d-block moto1-img motosinfo"
+                                alt="KAWASAKI NINJA 65">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/KAWASAKI2.png" class="d-block moto1-img motosinfo"
+                                alt="KAWASAKI NINJA 65">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/KAWASAKI3.png" class="d-block moto1-img motosinfo"
+                                alt="KAWASAKI NINJA 65">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouseldazz"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouseldazz"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <article class="col-md-6 order-md-2 mt-3 mt-md-0">
+                    <h3>KAWASAKI NINJA 650	</h3>
+                    <p><strong>Cilindraje:</strong> 649 cc</p>
+                    <p><strong>Motor:</strong> 64 Nm a 6,700 rpm.</p>
+                    <p><strong>Potencia:</strong> 68 CV a 8,000 rpm.</p>
+                    <p><strong>Peso:</strong> 192–193 kg (orden de marcha)</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $29.606.475 COP</p>
+                </article>
+            </div>
+
+            <!-- 4. KTM RC 390 -->
+
+            <div id="ntorq" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselntorq" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/KTM_RC.png" class="d-block moto2-img motosinfo"
+                                alt="KTM RC 390">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/KTM_RC3.png" class="d-block moto2-img motosinfo"
+                                alt="KTM RC 390">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/KTM_RC_390.png" class="d-block moto2-img motosinfo"
+                                alt="KTM RC 390">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselntorq"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselntorq"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>KTM RC 390</h3>
+                    <p><strong>Cilindraje:</strong> 124.79 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, monocilíndrico</p>
+                    <p><strong>Potencia:</strong> 9.25 HP @ 7500 rpm</p>
+                    <p><strong>Transmisión:</strong> Automática</p>
+                    <p><strong>Frenos:</strong> Disco delantero</p>
+                    <p><strong>Peso:</strong> 116.1 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $8.599.999 COP</p>
+                </article>
+            </div>
+
+            <!-- 5. DUCATI PANIGALE V4 -->
+
+            <div id="dio" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouseldio" class="carousel slide moto-carrusel col-md-6 order-md-1 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor1">
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/DUCATI.png" class="d-block moto-img motosinfo"
+                                alt="DUCATI PANIGALE V4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/DUCATI1.png" class="d-block moto-img motosinfo"
+                                alt="DUCATI PANIGALE V4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/DUCATI3.png" class="d-block moto-img motosinfo"
+                                alt="DUCATI PANIGALE V4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouseldio"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouseldio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <article class="col-md-6 order-md-2 mt-3 mt-md-0">
+                    <h3>DUCATI PANIGALE V4</h3>
+                    <p><strong>Cilindraje:</strong> 1,103 cc</p>
+                    <p><strong>Motor:</strong> 4 tiempos, con cigüeñal contrarrotante y refrigeración líquida.</p>
+                    <p><strong>Potencia:</strong> 215.5 CV (212 HP) a 13,000 rpm</p>
+                    <p><strong>Transmisión:</strong> Manual de 6 velocidades</p>
+                    <p><strong>Peso:</strong> 191 kg en orden de marcha (sin combustible).</p>
+                    <p class="precio"><strong>Precio estimado:</strong> $146.500.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 6.  YAMAHA YZF-R1 -->
+
+            <div id="piaggio" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselpiaggio" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor1">
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/YAMAHA.png"
+                                class="d-block moto2-img moto-responsive motosinfo" alt="YAMAHA YZF-R1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/YAMAHA1.png"
+                                class="d-block moto2-img moto-responsive motosinfo" alt="YAMAHA YZF-R1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/YAMAHA2.png" class="d-block moto-img motosinfo"
+                                alt="YAMAHA YZF-R1">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselpiaggio"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselpiaggio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>YAMAHA YZF-R1</h3>
+                    <p><strong>Cilindraje:</strong> 998 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, 4 cilindros en línea, DOHC, refrigerado por líquido</p>
+                    <p><strong>Potencia:</strong> 200 CV @ 13.500 rpm</p>
+                    <p><strong>Transmisión:</strong> 6 velocidades, engrane constante</p>
+                    <p><strong>Frenos:</strong> Doble disco hidráulico delantero (320 mm) y disco hidráulico trasero (220 mm) con ABS</p>
+                    <p><strong>Peso:</strong> 199 kg (en orden de marcha)</p>
+                    <p class="precio"><strong>Precio estimado:</strong> A partir de $100.000.000 COP</p>
+                </article>
+            </div>
+
+            <!-- SUZUKI GSX-8R -->
+
+            <div id="address" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouseladdress" class="carousel slide moto-carrusel col-md-6 order-md-1 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor1">
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/SUSUKI.png" class="d-block moto3-img motosinfo"
+                                alt="SUZUKI GSX-8R">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/SUSUKI1.png" class="d-block moto3-img motosinfo"
+                                alt="SUZUKI GSX-8R">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Deportivas/SUSUKI2.png" class="d-block moto3-img motosinfo"
+                                alt="SUZUKI GSX-8R">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouseladdress"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouseladdress"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <article class="col-md-6 order-md-2 mt-3 mt-md-0">
+                    <h3>SUZUKI GSX-8R</h3>
+                    <p><strong>Cilindraje:</strong> 776 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, 2 cilindros en línea, DOHC, refrigerado por líquido</p>
+                    <p><strong>Potencia:</strong> 83 CV, 8.500 rpm</p>
+                    <p><strong>Transmisión:</strong> 6 velocidades con Quickshifter</p>
+                    <p><strong>Frenos:</strong> Doble disco hidráulico delantero y disco hidráulico trasero con ABS</p>
+                    <p><strong>Peso:</strong> 205 kg</p>
+                    <p class="precio"><strong>Precio estimado:</strong> A partir de $60.000.000 COP</p>
+                </article>
+            </div>
+
+            <!-- 8. APRILIA RS 600 -->
+
+            <div id="crox" class="row align-items-center mb-5 filterable-item">
+                <figure id="motoCarouselcrox" class="carousel slide moto-carrusel col-md-6 order-md-2 mt-3 mt-md-0"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner contenedor">
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/APRILA.png" class="d-block moto1-img motosinfo"
+                                alt="APRILIA RS 600">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/APRILA1.png" class="d-block moto1-img motosinfo"
+                                alt="APRILIA RS 600">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../assets/Deportivas/APRILA2.png" class="d-block moto1-img motosinfo"
+                                alt="APRILIA RS 600">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#motoCarouselcrox"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#motoCarouselcrox"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+
+                <article class="col-md-6 order-md-1 mt-3 mt-md-0">
+                    <h3>APRILIA RS 600</h3>
+                    <p><strong>Cilindraje:</strong> 659 cc</p>
+                    <p><strong>Motor:</strong> 4 Tiempos, 2 cilindros en línea, DOHC, refrigerado por líquido</p>
+                    <p><strong>Potencia:</strong> 100 CV @ 10.500 rpm</p>
+                    <p><strong>Transmisión:</strong> 6 velocidades con Quickshifter (cambio rápido)</p>
+                    <p><strong>Frenos:</strong> Doble disco hidráulico delantero (320 mm) y disco hidráulico trasero (220 mm) con ABS Cornering</p>
+                    <p><strong>Peso:</strong> 183 kg (en orden de marcha)</p>
+                    <p class="precio"><strong>Precio estimado:</strong> Alrededor de $64.990.000 COP</p>
+                </article>
+            </div>
+
         </section>
-
-        <section class="moto-container">
-    <div class="moto-imagen">
-        <img src="../assets/Deportivas/Honda_CBR500R.PNG" alt="Honda CBR650R">
-    </div>
-    <div class="moto-info">
-        <h2>Honda CBR650R</h2>
-        <p><strong>Motor:</strong> 721 cc, bicilíndrica, DOHC, refrigeración líquida</p>
-        <p><strong>Potencia:</strong> 35 kW (~ 47 CV) @ 8,500 rpm</p>
-        <p><strong>Peso:</strong> 182 kg en orden de marcha</p>
-        <p><strong>Suspensión:</strong> Horquilla Showa 31 mm / Pro-Link ajustable de 5 posiciones</p>
-        <p><strong>Precio:</strong> $22M – $28M</p>
-        <p><strong>Impuestos:</strong> 1.5 % del avalúo ≈ $395,000 COP de semaforización (Bogotá 2025)</p>
-        <p><strong>SOAT:</strong> ≈ $880,000 COP – consultar valor actualizado para 2025</p>
-    </div>
-        </section>
-
     </main>
 
-   <footer class="footer-def">
-      <section class="footer-complet">
-        <div class="footer-links">
-          <a href="#">Política de privacidad</a> |
-          <a href="#">Condiciones de uso</a> | <a href="#">Legal</a> |
-          <a href="#">Mapa del sitio</a>
-        </div>
-        <div class="footer-copy">
-          Copyright © 2025 Motoversus. Todos los derechos reservados
-        </div>
-      </section>
+    <footer class="footer-def">
+        <section class="footer-complet">
+            <div class="footer-links">
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Condiciones de uso</a> | <a href="#">Legal</a> |
+                <a href="#">Mapa del sitio</a>
+            </div>
+            <div class="footer-copy">
+                Copyright © 2025 Motoversus. Todos los derechos reservados
+            </div>
+        </section>
     </footer>
 
-    <!-- javascript de bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-    <!-- MDB -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"
-    ></script>
+    <!-- Script de boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- script personal -->
+    <script src="../script/script2.js"></script>
 </body>
+
 </html>
