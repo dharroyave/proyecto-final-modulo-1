@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/badelosh-ralintesla');
+@import url('https://fonts.cdnfonts.com/css/noto-serif-tangut-2');
+
+:root {
+    --color-1: #1D2026;
+    --color-2: #072359;
+    --color-3: #4E8AD9;
+    --color-4: #F2F2F1;
+    --text-body: 'Noto Serif Tangut', sans-serif;
+    --text-title: 'Badelosh Ralintesla', sans-serif;
+}
+
+/* Body */
+
+body {
+    background-color: var(--color-4);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: var(--text-body);
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 999px;
+    padding: 9px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Header */
+.bk-logo {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25%;
+    height: auto;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.barra {
+    background-color: var(--color-1);
+}
+
+.logo {
+    justify-content: center;
+    text-align: center;
+    width: 70px;
+}
+
+.navbar {
+    width: 80vh;
+}
+
+
+.form-control {
+    font-size: 20;
+    border-radius: 999px;
+}
+
+
+/* main */
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-4);
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner img {
+    width: 50vw;
+    height: 500px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+.footer-links a{
+  color: var(--color-enfasis2);
+  text-decoration: none;
+  margin: 0 5px;
+  color: var(--color-enfasis2)
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-complet {
+  background-color: var(--color-enfasis1);
+}
+
+.footer-copy {
+  color: var(--color-enfasis2);
+  font-size: 12px;
+}
+
+.footer-def {
+  text-align: center;
+  padding: 20px 10px;
+  font-family: var(--texto-secundario);
+  
+  
+}
