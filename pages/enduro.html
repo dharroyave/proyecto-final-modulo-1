@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titulo favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Galeria de motos Enduro</title>
+    <!-- link estilos de boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- link de estilos -->
+    <link rel="stylesheet" href="../styles/enduro.css" />
+  </head>
+
+  <body>
+    <header class="barra">
+      <section class="bk-logo">
+        <a href="#">
+          <img class="logo" src="../assets/logo.png" alt="MotoVersus Icon" />
+        </a>
+      </section>
+      <nav class="navbar navbar-expand-lg">
+        <section class="container-fluid">
+          <div class="mx-auto searchBar">
+            <form class="d-flex" role="search" onsubmit="return false;">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+                id="searchInput"
+              />
+            </form>
+          </div>
+
+          <div class="d-flex">
+            <a href="../index.html" class="btn btn-outline-light me-2"
+              >Inicio</a
+            >
+            <a href="#" class="btn btn-outline-light">About</a>
+          </div>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <figure>
+        <!-- Carousel wrapper -->
+        <div
+          id="carouselBasicExample"
+          class="carousel slide carousel-fade"
+          data-mdb-ride="carousel"
+          data-mdb-carousel-init
+        >
+          <!-- Inner -->
+          <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <img
+                src="../assets/Enduro/AKT-TTR-200-colombia.png"
+                class="d-block w-100"
+                alt="AKT-TTR-200-colombia"
+              />
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img
+                src="../assets/Enduro/Honda-Tornado-XR-300L.png"
+                class="d-block w-100"
+                alt="Honda-Tornado-XR-300L"
+              />
+            </div>
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img
+                src="../assets/Enduro/KTM-390-Enduro-R.png"
+                class="d-block w-100"
+                alt="KTM-390-Enduro-R"
+              />
+            </div>
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img
+                src="../assets/Enduro/suzuki-dr150-colombia.png"
+                class="d-block w-100"
+                alt="suzuki-dr150-colombia"
+              />
+            </div>
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img
+                src="../assets/Enduro/Honda-XR-190L.png"
+                class="d-block w-100"
+                alt="Honda-XR-190L"
+              />
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Carousel wrapper -->
+      </figure>
+
+      <section>
+
+        
+
+
+      </section>
+
+
+
+    </main>
+
+
+    <!-- footer -->
+
+    <footer class="footer-def">
+      <section class="footer-complet">
+        <div class="footer-links">
+          <a href="#">Política de privacidad</a> |
+          <a href="#">Condiciones de uso</a> | <a href="#">Legal</a> |
+          <a href="#">Mapa del sitio</a>
+        </div>
+        <div class="footer-copy">
+          Copyright © 2025 Motoversus. Todos los derechos reservados
+        </div>
+      </section>
+    </footer>
+
+    <!-- Script de boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script de MDBootstrap -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"
+    ></script>
+    <!-- script personal -->
+    <script src="../script/script2.js"></script>
+  </body>
+</html>
