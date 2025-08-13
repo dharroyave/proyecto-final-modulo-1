@@ -431,6 +431,8 @@ h3 {
   text-align: center;
   padding: 20px 10px;
   font-family: var(--texto-secundario);
+  background-color: var(--color-1);
+  color: var(--color-4);
   
   
 }
