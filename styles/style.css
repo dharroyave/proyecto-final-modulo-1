@@ -135,7 +135,21 @@ background: red;
   font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
-  text-align: center;
-  
+  text-align: center;  
 }
 
+.titulo {
+  display: grid;
+  text-align: center;
+  width: none;
+  margin: 8px;
+  background-color: var(--color-enfasis1);
+  color: var(--color-enfasis2);
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-family: var(--texto-secundario);
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  
+}
